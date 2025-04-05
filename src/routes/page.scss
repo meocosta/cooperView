@@ -1,0 +1,158 @@
+@import "basic.scss";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+//barra
+::-webkit-scrollbar {
+    width: 15px;
+    background-color: $blue;
+}
+
+//barrinha
+::-webkit-scrollbar-thumb {
+    background-color: $white;
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px $white;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+#first {
+    background-color: $preto;
+    display: flex;
+    justify-content: space-between;
+
+    div {
+        width: 50vw;
+    }
+}
+
+#code {
+    background: rgb(37, 48, 68);
+    background: radial-gradient(circle, rgba(37, 48, 68, 1) 0%, rgba(0, 0, 0, 1) 55%);
+    height: 60vh;
+
+    div {
+        width: 35vw;
+        height: 35vh;
+        position: absolute;
+    }
+
+    #deco {
+        margin-top: 10vh;
+        margin-left: 8vw;
+        border: solid $white 5px;
+        box-shadow: 0px 0px 5px $white;
+        height: 40vh;
+    }
+
+    #copper {
+        margin-top: 8vh;
+        margin-left: 10vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5vw;
+        height: 40vh;
+    }
+}
+
+#titulo {
+    background: rgb(37, 48, 68);
+    background: radial-gradient(circle, rgba(37, 48, 68, 1) 0%, rgba(0, 0, 0, 1) 53%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    @include league-spartan(300);
+
+    p {
+        color: $white;
+        position: absolute;
+        margin-top: -11vh;
+        margin-left: 7vw;
+        font-size: 2.5vw;
+
+    }
+
+    h1 {
+        font-size: 10vw;
+        color: $white;
+        text-shadow: 0px 0px 100px $cinzaclaro;
+    }
+}
+
+#qualidades {
+    margin-top: 30px;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(180deg, rgb(0, 0, 0) 0%, $blue 100%);
+    height: 45vh;
+
+    #options {
+        button {
+            background: transparent;
+            color: $white;
+            border: none;
+            padding: 10px;
+            font-size: 2vw;
+            cursor: pointer;
+            @include league-spartan(500);
+        }
+
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+#barrinha-container {
+    display: flex;
+    div {
+        transition: margin-left 1.5s;
+        width: 33.3vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        #barrinha {
+            width: 25vw;
+        }
+    }
+
+}
+
+.center{
+    div{
+        margin-left: 31vw;
+    }
+}
+
+.right{
+    div{
+        margin-left: 63vw;
+    }
+}
+
+#content_qualidades{
+    color: $white;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px 40px;
+    background-color: $blue;
+    h1{
+        text-shadow: 0px 0px 10px black;
+        font-size: 7vw;
+        @include league-spartan(500);
+    }
+    p{
+        font-size: 2vw;
+        @include league-spartan(300);
+        text-align: end;
+    }
+}

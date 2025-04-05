@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+$blue: #253044;
+$preto: #000000;
+$cinza: #8C7A6B;
+$cinzaclaro: #D9D9D9;
+$white: #FFFFFF;
+$vermelho: #90323D;
+$vermelhoescuro: #5E0B15;
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: $preto;
+}
+
+
+
+@mixin league-spartan($width) {
+    font-family: "League Spartan", serif;
+    font-optical-sizing: auto;
+    font-weight: $width;
+    font-style: normal;
+}

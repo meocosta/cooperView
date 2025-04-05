@@ -1,0 +1,40 @@
+@import "./basic.scss";
+
+header {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, $preto 0%, $blue 100%);
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    padding: 10px 40px;
+    box-shadow: 0px 0px 20px $preto;
+    position: fixed;
+    width: 100vw;
+    box-sizing: border-box;
+    z-index: 1000;
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 25vw;
+        a{
+            color: white;
+            text-decoration: none;
+            font-size: 1.5rem;
+            @include league-spartan(300);
+        }
+    }
+}
+
+footer{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $blue;
+}
+
+#sep{
+    width: 100vw;
+    height: 10vh;
+}
